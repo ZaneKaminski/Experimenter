@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Experiment Output="true">
+  <Slides>
+    <ColorSlide Height="768" Width="1024" UseHeightWidth="True" Color="White">
+      <SlideObjects>
+        <TextBlockSlideObject Margins="0,-50,0,0" Text="Number Sequences" FontSize="50"
+                              HorizontalAlignment="Center" VerticalAlignment="Center" />
+        
+        <ButtonSlideObject Margins="0,50,0,0" Text="Next" Width="100" Height="20"
+                           HorizontalAlignment="Center" VerticalAlignment="Center" >
+          <Events>
+            <Event Name="Click">
+              <Call>NextSlide()</Call>
+            </Event>
+          </Events>
+        </ButtonSlideObject>
+      </SlideObjects>
+    </ColorSlide>
+    
+    <ColorSlide Height="768" Width="1024" UseHeightWidth="True" Color="White">
+      <SlideObjects>
+        <TextBoxSlideObject Output="true" Name="PartName" Margins="150,-50,0,0"
+                            Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        
+        <TextBlockSlideObject Margins="-150,-50,0,0" Text="Name" Foreground="Black"
+                              Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        
+        
+
+        <TextBoxSlideObject Output="true" Name="PartDoB" Margins="150,0,0,0"
+                            Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <TextBlockSlideObject Margins="-150,0,0,0" Text="Date Of Birth" Foreground="Black"
+                              Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        
+        
+        
+        <TextBoxSlideObject Output="true" Name="PartDatePart" Margins="150,50,0,0"
+                    Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <TextBlockSlideObject Margins="-150,50,0,0" Text="Date of Participation" Foreground="Black"
+                              Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        
+        
+        
+        <TextBoxSlideObject Output="true" Name="PartSex" Margins="150,100,0,0"
+                    Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <TextBlockSlideObject Margins="-150,100,0,0" Text="Gender" Foreground="Black"
+                              Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        
+        
+        
+        <TextBoxSlideObject Output="true" Name="PartSchool" Margins="150,150,0,0"
+            Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <TextBlockSlideObject Margins="-150,150,0,0" Text="Your School" Foreground="Black"
+                              Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        
+        
+        
+        <ButtonSlideObject Margins="0,200,0,0" Text="Submit" Width="100" Height="20"
+                           HorizontalAlignment="Center" VerticalAlignment="Center">
+          <Events>
+            <Event Name="Click">
+              <Call>SetOutput(#PartName + '_Results.csv')</Call>
+              <Call>NextSlide()</Call>
+            </Event>
+          </Events>
+        </ButtonSlideObject>
+      </SlideObjects>
+    </ColorSlide>
+
+    <MediaSlide Height="768" Width="1024" UseHeightWidth="False" Media="Slide3.BMP">
+      <SlideObjects>
+        <TextBoxSlideObject Margins="862,240,0,0" FontSize="35" Width="50" Height="50" Output="true"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" Name="1"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+
+        <ButtonSlideObject Margins="0,0,50,50" Text="Next" Width="100" Height="20"
+                           HorizontalAlignment="Right" VerticalAlignment="Bottom">
+          <Events>
+            <Event Name="Click">
+              <Call>NextSlide()</Call>
+            </Event>
+          </Events>
+        </ButtonSlideObject>
+      </SlideObjects>
+    </MediaSlide>
+
+    <MediaSlide Height="768" Width="1024" UseHeightWidth="True" Media="Slide4.BMP">
+      <SlideObjects>
+        <TextBoxSlideObject Margins="545,460,0,0" FontSize="35" Width="50" Height="50" Name="1"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" Output="true"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="662,341,0,0" FontSize="35" Width="50" Height="50" Name="2"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" Output="true"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="788,224,0,0" FontSize="35" Width="50" Height="50" Name="3"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" Output="true"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="938,345,0,0" FontSize="35" Width="50" Height="50" Name="4"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" Output="true"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <ButtonSlideObject Margins="0,0,50,50" Text="Next" Width="100" Height="20"
+                   HorizontalAlignment="Right" VerticalAlignment="Bottom">
+          <Events>
+            <Event Name="Click">
+              <Call>NextSlide()</Call>
+            </Event>
+          </Events>
+        </ButtonSlideObject>
+      </SlideObjects>
+    </MediaSlide>
+    
+    <WebSlide Url="file:///%C;Frog.html" Height="768" Width="1024" UseHeightWidth="True" RunTime="5000" Active="True" />
+
+    <MediaSlide Height="768" Width="1024" UseHeightWidth="True" Media="Slide6.BMP">
+      <SlideObjects>
+        <TextBoxSlideObject Margins="37,367,0,0" FontSize="35" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" Name="1"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="506,442,0,0" FontSize="35" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" Name="2"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="654,445,0,0" FontSize="35" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" Name="3"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="820,407,0,0" FontSize="35" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" Name="4"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        
+        <ButtonSlideObject Margins="0,0,50,50" Text="Next" Width="100" Height="20"
+                   HorizontalAlignment="Right" VerticalAlignment="Bottom">
+          <Events>
+            <Event Name="Click">
+              <Call>NextSlide()</Call>
+            </Event>
+          </Events>
+        </ButtonSlideObject>
+      </SlideObjects>
+    </MediaSlide>
+
+    <WebSlide Url="file:///%C;flight (1).html" Height="768" Width="1024" UseHeightWidth="True" RunTime="6200" Active="True" />
+
+    <MediaSlide Height="768" Width="1024" UseHeightWidth="True" Media="Slide8.BMP">
+      <SlideObjects>
+        <TextBoxSlideObject Margins="57,457,0,0" FontSize="35" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" Name="1"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="234,370,0,0" FontSize="35" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" Name="2"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="819,465,0,0" FontSize="35" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" Name="3"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="947,346,0,0" FontSize="35" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" Name="4"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        
+        <ButtonSlideObject Margins="0,0,50,50" Text="Next" Width="100" Height="20"
+                   HorizontalAlignment="Right" VerticalAlignment="Bottom">
+          <Events>
+            <Event Name="Click">
+              <Call>NextSlide()</Call>
+            </Event>
+          </Events>
+        </ButtonSlideObject>
+      </SlideObjects>
+    </MediaSlide>
+
+    <WebSlide Url="file:///%C;Car.html" Height="768" Width="1024" UseHeightWidth="True" RunTime="9000" Active="True" />
+
+    <MediaSlide Height="768" Width="1024" UseHeightWidth="True" Media="Slide10.BMP">
+      <SlideObjects>
+        <TextBoxSlideObject Margins="37,567,0,0" FontSize="40" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="209,530,0,0" FontSize="40" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="359,464,0,0" FontSize="40" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="935,668,0,0" FontSize="40" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <ButtonSlideObject Margins="0,0,125,50" Text="Next" Width="100" Height="20"
+                   HorizontalAlignment="Right" VerticalAlignment="Bottom">
+          <Events>
+            <Event Name="Click">
+              <Call>NextSlide()</Call>
+            </Event>
+          </Events>
+        </ButtonSlideObject>
+      </SlideObjects>
+    </MediaSlide>
+
+    <WebSlide Url="file:///%C;girl.html" Height="768" Width="1024" UseHeightWidth="True" RunTime="6600" Active="True" />
+
+    <MediaSlide Height="768" Width="1024" UseHeightWidth="True" Media="Slide12.BMP" Repeat="True">
+      <SlideObjects>
+        <TextBoxSlideObject Margins="76,351,0,0" FontSize="40" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="615,598,0,0" FontSize="40" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="807,604,0,0" FontSize="40" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBoxSlideObject Margins="938,474,0,0" FontSize="40" Width="50" Height="50" Output="True"
+                            HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+
+        <ButtonSlideObject Margins="0,0,50,50" Text="Next" Width="100" Height="20"
+                   HorizontalAlignment="Right" VerticalAlignment="Bottom">
+          <Events>
+            <Event Name="Click">
+              <Call>NextSlide()</Call>
+            </Event>
+          </Events>
+        </ButtonSlideObject>
+      </SlideObjects>
+    </MediaSlide>
+
+    <WebSlide Url="file:///%C;pizza.html" Height="768" Width="1024" UseHeightWidth="True" RunTime="6000" Active="True" />
+  </Slides>
+</Experiment>
